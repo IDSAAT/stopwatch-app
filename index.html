@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch | Time Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch-card">
+            <h1>⏱️ Stopwatch</h1>
+            
+            <!-- Time Display -->
+            <div class="time-display">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">00</span>
+            </div>
+            
+            <!-- Control Buttons -->
+            <div class="controls">
+                <button id="startBtn" class="btn btn-start">▶ Start</button>
+                <button id="pauseBtn" class="btn btn-pause" disabled>⏸ Pause</button>
+                <button id="resetBtn" class="btn btn-reset">🔄 Reset</button>
+                <button id="lapBtn" class="btn btn-lap">⏱️ Lap</button>
+            </div>
+            
+            <!-- Lap Times Section -->
+            <div class="lap-section">
+                <h3>Lap Times</h3>
+                <div id="lapList" class="lap-list">
+                    <p class="empty-laps">No laps recorded. Press "Lap" to track intervals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
